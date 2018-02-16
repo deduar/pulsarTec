@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/pulsar.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -29,7 +30,10 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{-- config('app.name', 'Laravel') --}}
+                        <a class="navbar-brand logo" href="{{ route('login') }}">
+                            <img src={{ asset('images/logo.png') }} alt="Pulsar Tec">
+                        </a>
                     </a>
                 </div>
 
@@ -46,7 +50,7 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
-                            @if (Auth::user()->confirmed)
+                            @if (Auth::user())
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>

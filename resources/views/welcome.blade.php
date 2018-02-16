@@ -62,6 +62,10 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            a.logo {
+                padding-right: 700px;
+            }
         </style>
     </head>
     <body>
@@ -71,6 +75,9 @@
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
                     @else
+                        <a class="logo" href="{{ route('login') }}">
+                            <img src={{ asset('images/logo.png') }} alt="Pulsar Tec">
+                        </a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
                     @endif

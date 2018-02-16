@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"reg",
+				"register_code"
+			],
+			[
 				"A",
 				"Auth"
 			],
@@ -510,37 +514,42 @@
 			[
 				"ge",
 				"getting-started"
-			],
-			[
-				"a",
-				"attr"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/Auth/RegisterController.php",
+			"file": "app/Http/Controllers/HomeController.php",
 			"settings":
 			{
-				"buffer_size": 2485,
+				"buffer_size": 1756,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/Controller.php",
+			"file": "app/Http/Controllers/Auth/RegisterController.php",
 			"settings":
 			{
-				"buffer_size": 361,
+				"buffer_size": 2485,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/HomeController.php",
+			"file": "routes/web.php",
 			"settings":
 			{
-				"buffer_size": 863,
+				"buffer_size": 758,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/verify.blade.php",
+			"settings":
+			{
+				"buffer_size": 891,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -601,28 +610,27 @@
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/passwords",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes"
 	],
 	"file_history":
 	[
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth/RegisterController.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts/app.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/home.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth/LoginController.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/User.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations/2018_02_06_211604_add_paid_to_users.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails/welcome.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/HomeController.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes/web.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/home.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/emails/welcome.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/welcome.blade.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts/app.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/.env",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/app.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
@@ -630,7 +638,6 @@
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/mail.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/passwords/reset.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth/ResetPasswordController.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth/RegisterController.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/register.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/database.php",
 		"/var/www/html/web/application/views/site/experience/reservation.php",
@@ -743,7 +750,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 21.0
 	},
 	"find_in_files":
 	{
@@ -937,8 +944,38 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/Auth/RegisterController.php",
+					"file": "app/Http/Controllers/HomeController.php",
 					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1756,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1697,
+								1697
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 350.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/Auth/RegisterController.php",
+					"semi_transient": true,
 					"settings":
 					{
 						"buffer_size": 2485,
@@ -948,8 +985,8 @@
 						"selection":
 						[
 							[
-								1455,
-								1455
+								1416,
+								1416
 							]
 						],
 						"settings":
@@ -962,24 +999,24 @@
 						"translation.y": 559.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/Http/Controllers/Controller.php",
-					"semi_transient": true,
+					"buffer": 2,
+					"file": "routes/web.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 361,
+						"buffer_size": 758,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								748,
+								748
 							]
 						],
 						"settings":
@@ -994,20 +1031,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/HomeController.php",
+					"buffer": 3,
+					"file": "resources/views/verify.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 863,
+						"buffer_size": 891,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								622,
-								622
+								802,
+								802
 							]
 						],
 						"settings":
