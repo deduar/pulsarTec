@@ -62,10 +62,10 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('address') ? ' has-error' : '' }}">
-                            <label for="address" class="col-md-4 control-label">Address</label>
+                            <label for="name" class="col-md-4 control-label">Address</label>
 
                             <div class="col-md-6">
-                                <input id="adress" type="text" class="form-control" name="address" required>
+                                <input id="name" type="text" class="form-control" name="address" value="{{ old('address') }}" required autofocus>
 
                                 @if ($errors->has('address'))
                                     <span class="help-block">
