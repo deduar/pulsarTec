@@ -24,3 +24,4 @@ Route::get('/home/profile', 'HomeController@editProfile')->name('edit_profile');
 Route::get('/verify/{register_code}', 'HomeController@verify')->name('verify');
 
 Route::get('/resend', 'HomeController@resend')->name('resend');
+

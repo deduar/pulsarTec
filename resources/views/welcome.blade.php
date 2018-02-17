@@ -51,7 +51,7 @@
 
             .links > a {
                 color: #636b6f;
-                padding: 0 25px;
+                padding: 0 12px;
                 font-size: 12px;
                 font-weight: 600;
                 letter-spacing: .1rem;
@@ -64,8 +64,19 @@
             }
 
             a.logo {
-                padding-right: 700px;
+                padding-right: 650px;
             }
+
+            .img-rounded{
+                border-radius: 5px;
+            }
+
+            a.flag{
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+
         </style>
     </head>
     <body>
@@ -73,13 +84,15 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Odoo</a>
                     @else
                         <a class="logo" href="{{ url('/') }}">
                             <img src={{ asset('images/logo.png') }} alt="Pulsar Tec">
                         </a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
+                        <a class="flag" href="?_locale=es"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a>
+                        <a class="flag" href="?_locale=en"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a>
                     @endif
                 </div>
             @endif

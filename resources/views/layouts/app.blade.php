@@ -47,10 +47,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
+                            {{!! Session::get('_locale') !!}}
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
-                            <li><a href="#"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a></li>
-                            <li><a href="#"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li>
+                            <li><a href="?_locale=es"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a></li>
+                            <li><a href="?_locale=en"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li>
                         @else
                             @if (Auth::user())
                             <li class="dropdown">
@@ -75,6 +76,8 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li><a href="?_locale=es"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a></li>
+                            <li><a href="?_locale=en"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li>
                             @endif
                         @endif
                     </ul>
