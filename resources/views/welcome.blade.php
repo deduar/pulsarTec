@@ -75,7 +75,7 @@
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a class="logo" href="{{ route('login') }}">
+                        <a class="logo" href="{{ url('/') }}">
                             <img src={{ asset('images/logo.png') }} alt="Pulsar Tec">
                         </a>
                         <a href="{{ url('/login') }}">Login</a>

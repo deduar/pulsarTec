@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"set",
+				"setlocale"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"nav",
+				"navbar-right"
+			],
+			[
+				"navbar",
+				"navbar-nav"
+			],
+			[
 				"reg",
 				"register_code"
 			],
@@ -54,10 +74,6 @@
 			[
 				"for",
 				"form\tTag"
-			],
-			[
-				"mar",
-				"margin-bottom"
 			],
 			[
 				"pad",
@@ -498,58 +514,16 @@
 			[
 				"send",
 				"sender_id"
-			],
-			[
-				"Inb",
-				"InboxStr"
-			],
-			[
-				"Ex",
-				"Experiences"
-			],
-			[
-				"base",
-				"base_url"
-			],
-			[
-				"ge",
-				"getting-started"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/HomeController.php",
+			"file": "resources/views/auth/login.blade.php",
 			"settings":
 			{
-				"buffer_size": 1756,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/Auth/RegisterController.php",
-			"settings":
-			{
-				"buffer_size": 2485,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "routes/web.php",
-			"settings":
-			{
-				"buffer_size": 758,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/verify.blade.php",
-			"settings":
-			{
-				"buffer_size": 891,
+				"buffer_size": 3066,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -611,34 +585,45 @@
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/passwords",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes"
 	],
 	"file_history":
 	[
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/app.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Kernel.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Providers/Language.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Providers/RouteServiceProvider.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth/RegisterController.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts/app.blade.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/home.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth/LoginController.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/passwords.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/passwords.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes/web.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/welcome.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts/app.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/register.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/public/css/pulsar.css",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/home.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/verify.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/HomeController.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/User.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations/2018_02_06_211604_add_paid_to_users.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails/welcome.blade.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/HomeController.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes/web.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/emails/welcome.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/welcome.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/.env",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/app.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Foundation/Auth/SendsPasswordResetEmails.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/mail.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/passwords/reset.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth/ResetPasswordController.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/register.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/database.php",
 		"/var/www/html/web/application/views/site/experience/reservation.php",
 		"/var/www/html/web/application/models/experience_model.php",
@@ -739,18 +724,11 @@
 		"/home/deduar/Projects/lubricam-web/web/assets/js/google-recaptcha.js",
 		"/home/deduar/Projects/lubricam-web/.gitignore",
 		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Form/Type/MessagesSupportType.php",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Shows/includes/reportForm.html.twig",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Controller/ShowsController.php",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Frontend/Modals/Report.html.twig",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Frontend/Modals/ContactSpecial.html.twig",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Form/Type/ReportsType.php",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Frontend/Modals/Contact.html.twig",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Frontend/Modals/Register.hmtl.twig",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Frontend/Modals/Request.html.twig"
+		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Shows/includes/reportForm.html.twig"
 	],
 	"find":
 	{
-		"height": 21.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -764,6 +742,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"img",
 			"code",
 			"register_code",
 			"code",
@@ -890,8 +869,7 @@
 			"session()",
 			"session->",
 			"experience_model",
-			"unpaid",
-			"order"
+			"unpaid"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -944,19 +922,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/HomeController.php",
+					"file": "resources/views/auth/login.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1756,
+						"buffer_size": 3066,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1697,
-								1697
+								610,
+								610
 							]
 						],
 						"settings":
@@ -966,98 +944,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 350.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Http/Controllers/Auth/RegisterController.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 2485,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1416,
-								1416
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 559.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "routes/web.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 758,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								748,
-								748
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "resources/views/verify.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 891,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								802,
-								802
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1148,7 +1038,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 191.0,
+	"side_bar_width": 212.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

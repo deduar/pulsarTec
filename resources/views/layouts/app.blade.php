@@ -31,7 +31,7 @@
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{-- config('app.name', 'Laravel') --}}
-                        <a class="navbar-brand logo" href="{{ route('login') }}">
+                        <a class="navbar-brand logo" href="{{ url('/') }}">
                             <img src={{ asset('images/logo.png') }} alt="Pulsar Tec">
                         </a>
                     </a>
@@ -49,6 +49,8 @@
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
+                            <li><a href="#"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a></li>
+                            <li><a href="#"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li>
                         @else
                             @if (Auth::user())
                             <li class="dropdown">
