@@ -19,8 +19,9 @@ return [
     'token' => 'This password reset token is invalid.',
     'user' => "We can't find a user with that e-mail address.",*/
 
-    'username' => 'Username',
-    'password' => 'Password',
-    'sent' => 'Enviar',
-
+    'title' => 'Register',
+    'dashboard' => 'Dashboard',
+    'resend_email' => 'Need send again instructions for enable account ?',
+    'welcome_message' => 'First verify your account, check your eMail for instructions',
+    'welcome_odoo' => 'Welcome to Odoo !!!',
 ];

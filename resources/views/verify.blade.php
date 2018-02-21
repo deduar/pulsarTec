@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">@lang('home.dashboard')</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -13,9 +13,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <h3>Firts verify your account, check your eMail for instructions</h3>
+                    <h4>@lang('home.welcome_message')</h4>
                     <a class="btn btn-link" href="{{ route('resend') }}">
-                        Resend email to ability account?
+                        @lang('home.resend_email')
                     </a>
                     <h4>{{ session('resend_message') }}</h4>
                 </div>

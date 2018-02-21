@@ -48,8 +48,8 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             {{!! Session::get('_locale') !!}}
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <li><a href="{{ route('login') }}">@lang('welcome.login')</a></li>
+                            <li><a href="{{ route('register') }}">@lang('welcome.register')</a></li>
                             <li><a href="?_locale=es"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a></li>
                             <li><a href="?_locale=en"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li>
                         @else
@@ -64,7 +64,7 @@
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                            @lang('welcome.logout')
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -72,7 +72,7 @@
                                         </form>
                                     </li>
                                     <li>
-                                        <a href="{{ route('edit_profile') }}">Edit Profile</a>
+                                        <a href="{{ route('edit_profile') }}">@lang('welcome.edit_profile')</a>
                                     </li>
                                 </ul>
                             </li>

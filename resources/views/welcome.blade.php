@@ -89,8 +89,8 @@
                         <a class="logo" href="{{ url('/') }}">
                             <img src={{ asset('images/logo.png') }} alt="Pulsar Tec">
                         </a>
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
+                        <a href="{{ url('/login') }}">@lang('welcome.login')</a>
+                        <a href="{{ url('/register') }}">@lang('welcome.register')</a>
                         <a class="flag" href="?_locale=es"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a>
                         <a class="flag" href="?_locale=en"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a>
                     @endif

@@ -13,7 +13,11 @@ return [
     |
     */
 
-    'username' => 'Usuario',
+    'title' => 'Registrase',
+    'name' => 'Nombre',
+    'email' => 'Direccion de Correo',
     'password' => 'Contraseña',
+    'confirm_password' => 'Repetir Contraseña',
+    'address' => 'Dirección',
     'sent' => 'Enviar',
 ];
