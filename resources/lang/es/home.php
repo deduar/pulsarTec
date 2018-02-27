@@ -19,4 +19,5 @@ return [
     'welcome_message' => 'Primero verifique su cuenta, revise su correo electrónico para obtener istrucciones',
     'welcome_odoo' => 'Bienvenido a Odoo !!!',
     'end_date' => 'El tiempo de prueba vencio, Ahora debe renovar para continuar',
+    'welcome_odoo_renew' => 'Bien, ya has renovado puedes continuar usando Odoo',
 ];

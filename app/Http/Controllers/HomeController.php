@@ -30,6 +30,11 @@ class HomeController extends Controller
         $user = Auth::user();
         if ($user->confirmed != FALSE) {
             if (\Carbon\Carbon::parse($user->created_at)->addDay(1) < \Carbon\Carbon::now()){
+                //$paypalTransaction = new PaypalTransactions();
+                $paypalTransaction = PaypalTransactions::where('user_id','=',$user->id)->get();
+                if(count($paypalTransaction) > 0){
+                    return view('renew');
+                }
                 return view('endDate');
             }
             return view('home');
@@ -95,20 +100,9 @@ class HomeController extends Controller
             $paymentId = $_GET["paymentId"];
             $token = $_GET["token"];
             $payerId = $_GET["PayerID"];
-            echo sprintf(
-                'PaymentID: %s <br>Token: %s<br>PayerID: %s',
-                $paymentId, $token, $payerId
-            );
-     
+            
             $paypal = new ConsumerPaypal();
             $payment = $paypal->execute_payment($paymentId, $payerId);
-     
-            echo "<pre>";
-            print_r($payment->toArray()['transactions'][0]['related_resources'][0]['authorization']['id']);
-            print_r($payment->toArray()['transactions'][0]['amount']['total']);
-            print_r($payment->toArray()['transactions'][0]['amount']['currency']);
-            print_r($payment->toArray()['transactions'][0]['amount']['details']['tax']);
-            print_r($payment->toArray()['transactions'][0]['amount']['details']['shipping']);
 
             $this->getPaymentWithPayPal(
                 $payment->toArray()['transactions'][0]['related_resources'][0]['authorization']['id'],
@@ -121,6 +115,7 @@ class HomeController extends Controller
                 $payment->toArray()['transactions'][0]['amount']['total'],
                 $payment->toArray()['transactions'][0]['amount']['currency']
             );
+            return view('home');
 
         }
         else 
@@ -134,8 +129,7 @@ class HomeController extends Controller
     {
         $paypalTest = new ConsumerPaypal();
         $get_payment_with_paypal = $paypalTest->getPaymentWithPayPal($transactions_id,$amt,$currency);
-        echo "<pre>";
-        print_r($get_payment_with_paypal->toArray());
+        return view ('home');
     }
 
     public function updatePayWithPayPal($transaction_id,$amt,$currency){
