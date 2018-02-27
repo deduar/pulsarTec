@@ -21,8 +21,11 @@ return [
 
     'title' => 'Register',
     'dashboard' => 'Dashboard',
-    'resend_email' => 'Need send again instructions for enable account ?',
-    'welcome_message' => 'First verify your account, check your eMail for instructions',
-    'welcome_odoo' => 'Welcome to Odoo !!!',
-    'end_date' => 'The test time expired, Now you must renew to continue',
+    'basic' => 'Basico',
+    'silver' => 'Plata',
+    'premium' => 'Premio',
+    'amt_Basic' => '1',
+    'amt_Silver' => '2',
+    'amt_Premium' => '3',
+    'currency' => 'EUR',
 ];

@@ -15,6 +15,7 @@ class AddPaidToUsers extends Migration
     {
         Schema::table('users', function($table) {
             $table->string('address')->after('password');
+            $table->enum('language',['en','es'])->default('es');
             $table->string('register_code')->after('address');
             $table->boolean('confirmed')->after('register_code');
         });

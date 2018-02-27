@@ -25,3 +25,9 @@ Route::get('/verify/{register_code}', 'HomeController@verify')->name('verify');
 
 Route::get('/resend', 'HomeController@resend')->name('resend');
 
+Route::get('/pay/{amt}/{lang}', 'HomeController@pay')->name('pay');
+
+Route::get('/paypal_payment_response/{response}', 'HomeController@paypalpaymentresponse')->name('paypalPaymentResponse');
+
+//Route::get('/getPaymentWithPayPal', 'HomeController@getPaymentWithPayPal')->name('getPaymentWithPayPal');
+

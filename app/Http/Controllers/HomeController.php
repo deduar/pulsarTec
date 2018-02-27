@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Mail;
-
+use App\Libraries\ConsumerPaypal;
+use App\PaypalTransactions;
 
 class HomeController extends Controller
 {
@@ -27,11 +28,13 @@ class HomeController extends Controller
     public function index()
     {
         $user = Auth::user();
-        if ($user->confirmed != FALSE) {            
+        if ($user->confirmed != FALSE) {
+            if (\Carbon\Carbon::parse($user->created_at)->addDay(1) < \Carbon\Carbon::now()){
+                return view('endDate');
+            }
             return view('home');
         } else {
             return view('verify');
-            //die("Primero verificar la cuenta");
         }
     }
 
@@ -71,4 +74,80 @@ class HomeController extends Controller
         return view('verify');
     }
 
+    public function pay($amt, $lang)
+    {
+        if ($lang == "en"){
+            $currency = "USD";
+            $amount = ((float)$amt)*1.23;
+        } else {
+            $currency = "EUR";
+            $amount = ((float)$amt);
+        }
+        $paypal = new ConsumerPaypal();
+        $approvalUrl = $paypal->savePaymentWithPaypal($currency,$amount);
+        echo "<a href='".$approvalUrl."'>Pagar con paypal</a>";
+    }
+
+    public function paypalpaymentresponse($res)
+    {
+        if($res == true)
+        {
+            $paymentId = $_GET["paymentId"];
+            $token = $_GET["token"];
+            $payerId = $_GET["PayerID"];
+            echo sprintf(
+                'PaymentID: %s <br>Token: %s<br>PayerID: %s',
+                $paymentId, $token, $payerId
+            );
+     
+            $paypal = new ConsumerPaypal();
+            $payment = $paypal->execute_payment($paymentId, $payerId);
+     
+            echo "<pre>";
+            print_r($payment->toArray()['transactions'][0]['related_resources'][0]['authorization']['id']);
+            print_r($payment->toArray()['transactions'][0]['amount']['total']);
+            print_r($payment->toArray()['transactions'][0]['amount']['currency']);
+            print_r($payment->toArray()['transactions'][0]['amount']['details']['tax']);
+            print_r($payment->toArray()['transactions'][0]['amount']['details']['shipping']);
+
+            $this->getPaymentWithPayPal(
+                $payment->toArray()['transactions'][0]['related_resources'][0]['authorization']['id'],
+                $payment->toArray()['transactions'][0]['amount']['total'],
+                $payment->toArray()['transactions'][0]['amount']['currency']
+            );
+
+            $this->updatePayWithPayPal(
+                $payment->toArray()['transactions'][0]['related_resources'][0]['authorization']['id'],
+                $payment->toArray()['transactions'][0]['amount']['total'],
+                $payment->toArray()['transactions'][0]['amount']['currency']
+            );
+
+        }
+        else 
+        {
+            echo "Payment failed";
+        }
+    }
+
+
+    public function getPaymentWithPayPal($transactions_id,$amt,$currency)
+    {
+        $paypalTest = new ConsumerPaypal();
+        $get_payment_with_paypal = $paypalTest->getPaymentWithPayPal($transactions_id,$amt,$currency);
+        echo "<pre>";
+        print_r($get_payment_with_paypal->toArray());
+    }
+
+    public function updatePayWithPayPal($transaction_id,$amt,$currency){
+        $user = Auth::user();
+
+        $paypalTransaction = new PaypalTransactions();
+        $paypalTransaction->user_id = $user->id;
+        $paypalTransaction->transaction_id = $transaction_id;
+        $paypalTransaction->amount = $amt;
+        $paypalTransaction->currency = $currency;
+
+        $paypalTransaction->save();
+
+    }
 }

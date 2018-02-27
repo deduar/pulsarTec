@@ -47,7 +47,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            {{!! Session::get('_locale') !!}}
+                            {{--!! Session::get('_locale') !!--}}
                             <li><a href="{{ route('login') }}">@lang('welcome.login')</a></li>
                             <li><a href="{{ route('register') }}">@lang('welcome.register')</a></li>
                             <li><a href="?_locale=es"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a></li>

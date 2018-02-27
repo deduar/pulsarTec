@@ -18,4 +18,5 @@ return [
     'resend_email' => '¿ Necesita enviar nuevamente las instrucciones para habilitar la cuenta ?',
     'welcome_message' => 'Primero verifique su cuenta, revise su correo electrónico para obtener istrucciones',
     'welcome_odoo' => 'Bienvenido a Odoo !!!',
+    'end_date' => 'El tiempo de prueba vencio, Ahora debe renovar para continuar',
 ];
