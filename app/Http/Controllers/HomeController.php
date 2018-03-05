@@ -28,16 +28,21 @@ class HomeController extends Controller
     public function index()
     {
         $user = Auth::user();
+        $paypalTransaction = PaypalTransactions::where('user_id','=',$user->id)->get();
         if ($user->confirmed != FALSE) {
             if (\Carbon\Carbon::parse($user->created_at)->addDay(1) < \Carbon\Carbon::now()){
-                //$paypalTransaction = new PaypalTransactions();
-                $paypalTransaction = PaypalTransactions::where('user_id','=',$user->id)->get();
                 if(count($paypalTransaction) > 0){
                     return view('renew');
+                } else {
+                    return view('endDate');
                 }
-                return view('endDate');
+            } else {
+                if(count($paypalTransaction) == 0){
+                    return view('home');
+                } else {
+                    return view('renew');
+                }
             }
-            return view('home');
         } else {
             return view('verify');
         }
@@ -93,6 +98,12 @@ class HomeController extends Controller
 
         header('Location: '.$approvalUrl);
         exit;
+    }
+
+    public function payRenew(){
+        $user = Auth::user();
+        $user->created_at = \Carbon\Carbon::now()->addDay(-20);
+        return view('endDate');
     }
 
     public function paypalpaymentresponse($res)

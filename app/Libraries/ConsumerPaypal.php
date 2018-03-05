@@ -99,7 +99,7 @@ class ConsumerPaypal {
 	 
 	 
 	    $redirectUrls = new RedirectUrls();
-	    $redirectUrls->setReturnUrl($this->_baseUrl . "paypal_payment_response/success")
+	    $redirectUrls->setReturnUrl($this->_baseUrl . "/home")
 	        ->setCancelUrl($this->_baseUrl . "/home");
 	 
 	    $payment = new Payment();

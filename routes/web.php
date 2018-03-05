@@ -27,4 +27,6 @@ Route::get('/resend', 'HomeController@resend')->name('resend');
 
 Route::get('/pay/{amt}/{lang}', 'HomeController@pay')->name('pay');
 
+Route::get('/pay_renew', 'HomeController@payRenew')->name('pay_renew');
+
 Route::get('/paypal_payment_response/{response}', 'HomeController@paypalpaymentresponse')->name('paypalPaymentResponse');

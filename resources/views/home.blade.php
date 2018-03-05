@@ -16,6 +16,9 @@
                     <h3>@lang('home.welcome_odoo')</h3>
                 </div>
             </div>
+            <a href="{{ route('pay_renew') }}">
+                <button type="button" class="btn btn-success pull-right">Pagar Renovación</button>
+            </a>
         </div>
     </div>
 </div>
