@@ -541,7 +541,16 @@
 			"file": "app/Http/Controllers/HomeController.php",
 			"settings":
 			{
-				"buffer_size": 4722,
+				"buffer_size": 4354,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "database/migrations/2018_02_26_000000_create_paypal_transactions_table.php",
+			"settings":
+			{
+				"buffer_size": 963,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -599,17 +608,24 @@
 	[
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Libraries",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources"
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views"
 	],
 	"file_history":
 	[
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/renew.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/home.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/home.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations/2018_02_26_000000_create_paypal_transactions_table.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations/2018_02_06_211604_add_paid_to_users.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/User.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/paypal_transactions.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/home.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/endDate.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes/web.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Libraries/ConsumerPaypal.php",
@@ -617,7 +633,6 @@
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/endDate.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/PayPal.log",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/public/css/pulsar.css",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/home.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/app.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts/app.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/.env",
@@ -731,12 +746,11 @@
 		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Controller/FrontController.php",
 		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Frontend/Includes/footer.html.twig",
 		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Frontend/Includes/formSupport.html.twig",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Controller/UsersController.php",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Users/Profile.html.twig"
+		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Controller/UsersController.php"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 21.0
 	},
 	"find_in_files":
 	{
@@ -925,7 +939,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -953,7 +967,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -981,7 +995,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -990,15 +1004,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4722,
+						"buffer_size": 4354,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4352,
-								4333
+								662,
+								662
 							]
 						],
 						"settings":
@@ -1008,7 +1022,37 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1429.0,
+						"translation.y": 26.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "database/migrations/2018_02_26_000000_create_paypal_transactions_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 963,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								703,
+								703
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
