@@ -39,7 +39,7 @@ class ConsumerPaypal {
     * @var
     *
     */
-    private $_baseUrl = "http://localhost/~deduar/Projects/PulsarTec_Odoo_SPA/public/";
+    private $_baseUrl = null;
  
     /**
     *
@@ -63,6 +63,8 @@ class ConsumerPaypal {
                 'log.LogLevel'      => 'DEBUG'
             )
         );
+
+        $this->_baseUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
     }
 
 
