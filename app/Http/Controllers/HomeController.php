@@ -128,8 +128,7 @@ class HomeController extends Controller
                 $payment->toArray()['transactions'][0]['amount']['total'],
                 $payment->toArray()['transactions'][0]['amount']['currency']
             );
-            return view('home');
-
+            return view('renew');
         }
         else 
         {
