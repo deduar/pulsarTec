@@ -95,7 +95,6 @@ class HomeController extends Controller
         }
         $paypal = new ConsumerPaypal();
         $approvalUrl = $paypal->savePaymentWithPaypal($currency,$amount);
-
         header('Location: '.$approvalUrl);
         exit;
     }

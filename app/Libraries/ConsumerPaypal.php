@@ -64,7 +64,8 @@ class ConsumerPaypal {
             )
         );
 
-        $this->_baseUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $url = substr($_SERVER["REQUEST_URI"], 0, strrpos( $_SERVER["REQUEST_URI"], "/pay"));
+        $this->_baseUrl = "http://".$_SERVER['HTTP_HOST'].$url;
     }
 
 
@@ -101,7 +102,7 @@ class ConsumerPaypal {
 	 
 	 
 	    $redirectUrls = new RedirectUrls();
-	    $redirectUrls->setReturnUrl($this->_baseUrl . "paypal_payment_response/success")
+	    $redirectUrls->setReturnUrl($this->_baseUrl . "/paypal_payment_response/success")
 	        ->setCancelUrl($this->_baseUrl . "/home");
 	 
 	    $payment = new Payment();

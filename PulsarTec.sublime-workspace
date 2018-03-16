@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Con",
+				"Config"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"_a",
+				"_baseUrl"
+			],
+			[
 				"re",
 				"renew"
 			],
@@ -304,10 +316,6 @@
 				"libraries"
 			],
 			[
-				"Con",
-				"ConsumerPaypal"
-			],
-			[
 				"Par",
 				"Pray_Email"
 			],
@@ -506,19 +514,38 @@
 			[
 				"transf",
 				"tarnsfer_box"
-			],
-			[
-				"paypal",
-				"paypal_box"
-			],
-			[
-				"paypl",
-				"paypal_box"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "app/Libraries/ConsumerPaypal.php",
+			"settings":
+			{
+				"buffer_size": 4445,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/HomeController.php",
+			"settings":
+			{
+				"buffer_size": 4634,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 1023,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -575,23 +602,19 @@
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Libraries",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes"
 	],
 	"file_history":
 	[
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/welcome.blade.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/HomeController.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes/web.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Libraries/ConsumerPaypal.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/endDate.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/HomeController.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/constants.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/bootstrap/app.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/composer.json",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/home.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/welcome.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes/web.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/validation.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Http/Response.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations/2018_02_26_000000_create_paypal_transactions_table.php",
@@ -601,7 +624,6 @@
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations/2018_02_06_211604_add_paid_to_users.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/User.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/paypal_transactions.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/endDate.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/endDate.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/endDate.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/PayPal.log",
@@ -711,14 +733,11 @@
 		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Entity/Countries.php",
 		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Form/Type/ProfileType.php",
 		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Entity/Users.php",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Entity/Continent.php",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Controller/FrontController.php",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Frontend/Includes/footer.html.twig",
-		"/home/deduar/Projects/lubricam-web/src/Lubricam/ViewBundle/Resources/views/Frontend/Includes/formSupport.html.twig"
+		"/home/deduar/Projects/lubricam-web/src/Lubricam/AppBundle/Entity/Continent.php"
 	],
 	"find":
 	{
-		"height": 21.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -732,6 +751,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_baseUrl",
 			"success",
 			"header",
 			"amt_Premium",
@@ -858,8 +878,7 @@
 			"voidPayment",
 			"detail",
 			"get_deta",
-			"get_all",
-			"changeBookingStatus"
+			"get_all"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -907,8 +926,95 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/Libraries/ConsumerPaypal.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1899,
+								1899
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 468.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/HomeController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2606,
+								2627
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1014.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "routes/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								788,
+								788
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -997,7 +1103,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 237.0,
+	"side_bar_width": 169.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
