@@ -1,0 +1,1 @@
+{{$name}} with email {{$email}}, whas register on the system <br>

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Mail;
+use Config;
 
 class RegisterController extends Controller
 {
@@ -78,11 +79,17 @@ class RegisterController extends Controller
         //---------------------------------------------------------
         $data['register_code']  = $user->register_code;
 
-        Mail::send('emails.welcome', $data, function($message) use ($data)
+        Mail::send('emails.validate', $data, function($message) use ($data)
         {
-            $message->from('no-reply@site.com', "Pulsar Tec");
-            $message->subject("Welcome to PulsarTec");
+            $message->from(Config::get('constants.options.no_reply'), "Pulsar Tec");
+            $message->subject("Register to PulsarTec");
             $message->to($data['email']);
+        });
+
+        Mail::send('emails.register',['name'=>$user['name'], 'email'=>$user['email'] ], function($message){
+            $message->from(Config::get('constants.options.no_reply'), "Pulsar Tec");
+            $message->subject("Register to PulsarTec");
+            $message->to(Config::get('constants.options.register_to_mail'));
         });
 
         return $user;

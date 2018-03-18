@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Mail;
 use App\Libraries\ConsumerPaypal;
 use App\PaypalTransactions;
+use Config;
 
 class HomeController extends Controller
 {
@@ -60,6 +61,15 @@ class HomeController extends Controller
             if ($register_code == $user->register_code){
                 $user->confirmed = TRUE;
                 $user->save();
+
+                $data = array ('name' => $user->name, 'email' => $user->email);
+
+                Mail::send('emails.welcome', $data, function($message) use ($data){
+                    $message->from(Config::get('constants.options.no_reply'), "Pulsar Tec");
+                    $message->subject("Welcome to PulsarTec");
+                    $message->to($data['email']);
+                });
+
                 return view('home'); 
             } else {
                 return view('verify');
@@ -75,7 +85,7 @@ class HomeController extends Controller
         Mail::send('emails.welcome', $data, function($message) use ($data)
         {
             $message->from('no-reply@site.com', "Pulsar Tec");
-            $message->subject("Welcome to PulsarTec");
+            $message->subject("Register into PulsarTec");
             $message->to($data['email']);
         });
 
