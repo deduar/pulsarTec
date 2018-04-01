@@ -30,3 +30,7 @@ Route::get('/pay/{amt}/{lang}', 'HomeController@pay')->name('pay');
 Route::get('/pay_renew', 'HomeController@payRenew')->name('pay_renew');
 
 Route::get('/paypal_payment_response/{response}', 'HomeController@paypalpaymentresponse')->name('paypalPaymentResponse');
+
+// temporal routes, testing cron
+Route::get('/testByDue', 'HomeController@testByDue')->name('testByDue');
+Route::get('/testByEnding', 'HomeController@testByEnding')->name('testByEnding');

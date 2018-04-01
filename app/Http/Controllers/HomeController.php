@@ -9,6 +9,8 @@ use App\Libraries\ConsumerPaypal;
 use App\PaypalTransactions;
 use Config;
 
+use Illuminate\Support\Facades\DB;
+
 class HomeController extends Controller
 {
     /**
@@ -31,7 +33,7 @@ class HomeController extends Controller
         $user = Auth::user();
         $paypalTransaction = PaypalTransactions::where('user_id','=',$user->id)->get();
         if ($user->confirmed != FALSE) {
-            if (\Carbon\Carbon::parse($user->created_at)->addDay(1) < \Carbon\Carbon::now()){
+            if (\Carbon\Carbon::parse($user->created_at)->addDay(Config::get('constants.options.end_date')) < \Carbon\Carbon::now()){
                 if(count($paypalTransaction) > 0){
                     return view('renew');
                 } else {
@@ -111,7 +113,7 @@ class HomeController extends Controller
 
     public function payRenew(){
         $user = Auth::user();
-        $user->created_at = \Carbon\Carbon::now()->addDay(-20);
+        $user->created_at = \Carbon\Carbon::now()->addDay(Config::get('constants.options.end_date'));
         return view('endDate');
     }
 
@@ -153,7 +155,8 @@ class HomeController extends Controller
         return view ('home');
     }
 
-    public function updatePayWithPayPal($transaction_id,$amt,$currency){
+    public function updatePayWithPayPal($transaction_id,$amt,$currency)
+    {
         $user = Auth::user();
 
         $paypalTransaction = new PaypalTransactions();
@@ -165,4 +168,67 @@ class HomeController extends Controller
         $paypalTransaction->save();
 
     }
+
+    public function testByDue()
+    {
+        $endDateBegin = \Carbon\Carbon::today()->subDays(Config::get('constants.options.end_date_begin'))->toDateTimeString();
+        $endDateEnd = \Carbon\Carbon::today()->addDays(Config::get('constants.options.end_date_end'))->toDateTimeString();
+
+        $userEndDate = DB::table('users')
+              ->whereBetween('created_at',array($endDateBegin,$endDateEnd))
+              ->get();
+
+        $data = array('begin'=>$endDateBegin, 'end'=>$endDateEnd, 'data'=>$userEndDate, 'key'=>0, 'beginDate'=>null, 'endDate'=>null);
+
+        foreach ($data['data'] as $key=>$user) {
+            $data['endDate'] = date('Y-m-d H:s', strtotime($user->created_at . " +30 days"));
+            $data['key']=$key;
+
+            Mail::send('emails.cron', $data, function($message) use ($data){
+                $message->from(Config::get('constants.options.no_reply'), "Pulsar Tec");
+                $message->subject("Cron of PulsarTec");
+                $message->to($data['data'][$data['key']]->email);
+            });            
+
+        }
+
+        Mail::send('emails.cron_summary', $data, function($message) use ($data){
+            $message->from(Config::get('constants.options.no_reply'), "Pulsar Tec");
+            $message->subject("Summary Cron of PulsarTec");
+            $message->to(Config::get('constants.options.cron_mail'));
+        });
+
+        echo "Mailed sender By Cron";
+    }
+
+    public function testByEnding(){
+        $endDate = \Carbon\Carbon::today()->subDays(Config::get('constants.options.end_date'))->toDateTimeString();
+
+        $userEndDate = DB::table('users')
+              ->where('created_at','<',$endDate)
+              ->get();
+
+        $data = array('data'=>$userEndDate, 'key'=>0);
+
+        foreach ($data['data'] as $key=>$user) {
+            $data['key']=$key;
+
+            Mail::send('emails.cron_ending', $data, function($message) use ($data){
+                $message->from(Config::get('constants.options.no_reply'), "Pulsar Tec");
+                $message->subject("Ending Trial PulsarTec");
+                $message->to($data['data'][$data['key']]->email);
+            });            
+
+        }
+
+        Mail::send('emails.cron_summary_ending', $data, function($message) use ($data){
+            $message->from(Config::get('constants.options.no_reply'), "Pulsar Tec");
+            $message->subject("Summary Cron Endining of PulsarTec");
+            $message->to(Config::get('constants.options.cron_mail'));
+        });
+
+        echo "Mailed sender By Ending";
+    }
+
+
 }
