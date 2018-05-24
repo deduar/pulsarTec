@@ -76,8 +76,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="?_locale=es"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a></li>
-                            <li><a href="?_locale=en"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li>
+                            <li><a href="{{ route('setLocale','es') }}"><img class="img-rounded" src={{ asset('images/es.png') }} alt="Español"></a></li>
+                            <li><a href="{{ route('setLocale','en') }}"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li>
+                            <!--li><a href="?_locale=es"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a></li>
+                            <li><a href="?_locale=en"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li-->
                             @endif
                         @endif
                     </ul>

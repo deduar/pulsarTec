@@ -19,12 +19,12 @@ return [
     'token' => 'This password reset token is invalid.',
     'user' => "We can't find a user with that e-mail address.",*/
 
-    'title' => 'Register',
+    'title' => 'Update Profile',
     'name' => 'Name',
     'email' => 'E-Mail Address',
     'password' => 'Password',
     'confirm_password' => 'Confirm Password',
     'address' => 'Address',
     'sent' => 'Send',
-    'update_password' => 'Change Password'
+    'language' => 'Language',
 ];

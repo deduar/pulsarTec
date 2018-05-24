@@ -9,6 +9,9 @@ use App\Libraries\ConsumerPaypal;
 use App\PaypalTransactions;
 use Config;
 
+use App;
+use Session;
+
 use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
@@ -31,6 +34,11 @@ class HomeController extends Controller
     public function index()
     {
         $user = Auth::user();
+        if (Session::get('locale') == null){
+            App::setLocale($user->language);    
+        } else {
+            App::setLocale(Session::get('locale'));
+        }
         $paypalTransaction = PaypalTransactions::where('user_id','=',$user->id)->get();
         if ($user->confirmed != FALSE) {
             if (\Carbon\Carbon::parse($user->created_at)->addDay(Config::get('constants.options.end_date')) < \Carbon\Carbon::now()){
@@ -52,11 +60,45 @@ class HomeController extends Controller
     }
 
     public function editProfile(){
-        die("Edit Profile acction");
+        $user = Auth::user();
+        if (Session::get('locale') == null){
+            App::setLocale($user->language);    
+        } else {
+            App::setLocale(Session::get('locale'));
+        }
+        return view('profile',['user'=>$user]);
     }
+
+    public function updateProfile(Request $request){
+        $user = Auth::user();
+        if (Session::get('locale') == null){
+            App::setLocale($user->language);    
+        } else {
+            App::setLocale(Session::get('locale'));
+        }
+        $user->update($request->all());
+        return view('welcome');
+    }
+
+    public function changePassword(){
+        $user = Auth::user();
+        if (Session::get('locale') == null){
+            App::setLocale($user->language);    
+        } else {
+            App::setLocale(Session::get('locale'));
+        }
+        die("changePassword");
+    }
+
+
 
     public function verify($register_code){
         $user = Auth::user();
+        if (Session::get('locale') == null){
+            App::setLocale($user->language);    
+        } else {
+            App::setLocale(Session::get('locale'));
+        }
         if ($user->confirmed){
             return view('home');
         }else {

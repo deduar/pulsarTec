@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"request"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"Re",
+				"Request"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
 				"us",
 				"userEndDate"
 			],
@@ -60,10 +84,6 @@
 				"_baseUrl"
 			],
 			[
-				"re",
-				"renew"
-			],
-			[
 				"headers",
 				"headers_sent"
 			],
@@ -116,24 +136,12 @@
 				"padding-right"
 			],
 			[
-				"pad",
-				"padding"
-			],
-			[
-				"marg",
-				"margin-right"
-			],
-			[
 				"mar",
 				"margin-top"
 			],
 			[
 				"set",
 				"setlocale"
-			],
-			[
-				"padd",
-				"padding-right"
 			],
 			[
 				"nav",
@@ -332,10 +340,6 @@
 				"include"
 			],
 			[
-				"req",
-				"req\trequire …"
-			],
-			[
 				"lib",
 				"libraries"
 			],
@@ -510,40 +514,25 @@
 			[
 				"is",
 				"isset"
-			],
-			[
-				"wid",
-				"width"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/Console/Kernel.php",
+			"file": "routes/web.php",
 			"settings":
 			{
-				"buffer_size": 1011,
+				"buffer_size": 1561,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Console/Commands/UserStatistics.php",
+			"file": "resources/views/emails/cron.blade.php",
 			"settings":
 			{
-				"buffer_size": 1405,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "UserStatistics.php"
-			}
-		},
-		{
-			"file": "config/constants.php",
-			"settings":
-			{
-				"buffer_size": 403,
-				"encoding": "UTF-8",
+				"buffer_size": 106,
 				"line_ending": "Unix"
 			}
 		},
@@ -551,16 +540,7 @@
 			"file": "app/Http/Controllers/HomeController.php",
 			"settings":
 			{
-				"buffer_size": 7704,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "routes/web.php",
-			"settings":
-			{
-				"buffer_size": 1212,
+				"buffer_size": 8903,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -618,19 +598,39 @@
 	[
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Console",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Console/Commands",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor"
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes"
 	],
 	"file_history":
 	[
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/register.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts/app.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/register.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/profile.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/home.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/home.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/User.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/public/css/pulsar.css",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/public/css/app.css",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/welcome.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/register.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes/web.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/HomeController.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/update.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/update.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Console/Kernel.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Console/Commands/UserStatistics.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/constants.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/app.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/composer.json",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/laradoo.php",
@@ -639,41 +639,30 @@
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails/cron.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails/welcome.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Controller.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/HomeController.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/constants.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth/RegisterController.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/welcome.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails/register.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Contracts/Mail/Mailer.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Libraries/ConsumerPaypal.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes/web.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/endDate.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/bootstrap/app.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/home.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/validation.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/vendor/laravel/framework/src/Illuminate/Http/Response.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations/2018_02_26_000000_create_paypal_transactions_table.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/renew.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/home.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/home.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations/2018_02_06_211604_add_paid_to_users.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/User.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/paypal_transactions.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/endDate.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/endDate.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/PayPal.log",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/public/css/pulsar.css",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts/app.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/.env",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/database.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/auth.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/welcome.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/welcome.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/verify.blade.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/register.blade.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/register.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/login.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Middleware/Language.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Kernel.php",
@@ -750,19 +739,11 @@
 		"/var/www/html/web/application/views/site/experience/myexpreservation_orig.php",
 		"/var/www/html/web/application/controllers/site/tools.php",
 		"/var/www/html/web/application/controllers/tools.php",
-		"/var/www/html/web/application/controllers/cron.php",
-		"/var/www/html/web/application/controllers/site/cron.php",
-		"/var/www/html/web/application/libraries/whatever.php",
-		"/var/www/html/web/application/controllers/site/whathever.php",
-		"/var/www/html/web/application/config/routes.php",
-		"/var/www/html/web/application/controllers/site/trip.php",
-		"/var/www/html/web/commonsettings/shopsy_payment_settings.php",
-		"/var/www/html/web/.gitognore",
-		"/var/www/html/web/application/config/database.php"
+		"/var/www/html/web/application/controllers/cron.php"
 	],
 	"find":
 	{
-		"height": 21.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -776,6 +757,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"register",
+			"update",
+			"home",
+			"col-md",
+			"email",
+			"view",
 			"Config",
 			"no_repl",
 			"regist",
@@ -897,13 +884,7 @@
 			"require",
 			"include_once",
 			"changeBookingStatus",
-			"die()",
-			"changeBookingStatus",
-			"reservation()",
-			"all",
-			"get_all",
-			"voidPayment",
-			"BOOKING"
+			"die()"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -956,60 +937,61 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Console/Kernel.php",
+					"file": "routes/web.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1011,
+						"buffer_size": 1561,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								704,
-								704
+								1066,
+								1066
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/Console/Commands/UserStatistics.php",
-					"semi_transient": false,
+					"file": "resources/views/emails/cron.blade.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1405,
+						"buffer_size": 106,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								669,
-								669
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_name": "UserStatistics.php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 116.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1017,88 +999,35 @@
 				},
 				{
 					"buffer": 2,
-					"file": "config/constants.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 403,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								41,
-								49
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app/Http/Controllers/HomeController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7704,
+						"buffer_size": 8903,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5902,
-								5902
+								2460,
+								2468
 							]
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1859.0,
+						"translation.y": 941.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "routes/web.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1212,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1056,
-								1056
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1106,7 +1035,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 21.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -1147,11 +1076,15 @@
 	{
 		"height": 90.0
 	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
 	"pinned_build_system": "",
 	"project": "PulsarTec.sublime-project",
 	"replace":
 	{
-		"height": 38.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1189,7 +1122,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 176.0,
+	"side_bar_width": 222.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
