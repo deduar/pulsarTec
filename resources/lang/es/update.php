@@ -27,4 +27,7 @@ return [
     'address' => 'Dirección',
     'sent' => 'Enviar',
     'language' => 'Lenguaje',
+    'actual_password' => 'Contraseña Actual',
+    'new_password' => 'Nueva Contraseña',
+    'confirm_password' => 'Confirmar Contraseña'
 ];

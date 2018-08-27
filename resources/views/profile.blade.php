@@ -81,9 +81,9 @@
                                 <button type="submit" class="btn btn-primary" formaction={{ route('update_profile') }}>
                                     @lang('register.sent')
                                 </button>
-                                <button type="submit" class="btn btn-primary" formaction={{ route('change_password') }}>
+                                <!--button type="submit" class="btn btn-primary" formaction={{ route('change_password') }}>
                                     @lang('register.update_password')
-                                </button>
+                                </button-->
                             </div>
                         </div>
                     </form>

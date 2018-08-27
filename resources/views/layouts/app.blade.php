@@ -48,10 +48,10 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             {{--!! Session::get('_locale') !!--}}
-                            <li><a href="{{ route('login') }}">@lang('welcome.login')</a></li>
-                            <li><a href="{{ route('register') }}">@lang('welcome.register')</a></li>
-                            <li><a href="?_locale=es"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a></li>
-                            <li><a href="?_locale=en"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li>
+                            <div class="col-md-4"><a href="{{ route('login') }}">@lang('welcome.login')</a></div>
+                            <div class="col-md-4"><a href="{{ route('register') }}">@lang('welcome.register')</a></div>
+                            <div class="col-md-1"><a href="{{ route('setLocale','es') }}"><img class="img-rounded" style="width: 30px; height: 20px;" src={{ asset('images/es.png') }} alt="Español"></a></div>
+                            <div class="col-md-1"><a href="{{ route('setLocale','en') }}"><img class="img-rounded" style="width: 30px; height: 20px;" src={{ asset('images/us.png') }} alt="English"></a></div>
                         @else
                             @if (Auth::user())
                             <li class="dropdown">
@@ -74,12 +74,12 @@
                                     <li>
                                         <a href="{{ route('edit_profile') }}">@lang('welcome.edit_profile')</a>
                                     </li>
+                                    <li>
+                                        <a href="{{ route('change_password') }}">@lang('welcome.change_password')</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a href="{{ route('setLocale','es') }}"><img class="img-rounded" src={{ asset('images/es.png') }} alt="Español"></a></li>
-                            <li><a href="{{ route('setLocale','en') }}"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li>
-                            <!--li><a href="?_locale=es"><img class="img-rounded" src={{ asset('images/es.png') }} alt="España"></a></li>
-                            <li><a href="?_locale=en"><img class="img-rounded" src={{ asset('images/us.png') }} alt="English"></a></li-->
+                            
                             @endif
                         @endif
                     </ul>

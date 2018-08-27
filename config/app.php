@@ -78,7 +78,7 @@ return [
     */
 
     'locale' => 'es',
-    'locales' => ['en' => 'English', 'es' => 'Español'],
+    //'locales' => ['en' => 'English', 'es' => 'Español'],
 
     /*
     |--------------------------------------------------------------------------
@@ -165,6 +165,11 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * Laravel Collective 5.3 (form $ html)
+         */
+        Collective\Html\HtmlServiceProvider::class,
+
+        /*
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
@@ -226,7 +231,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

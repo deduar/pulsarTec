@@ -26,4 +26,5 @@ return [
     'welcome_odoo' => 'Welcome to Odoo !!!',
     'end_date' => 'The test time expired, Now you must renew to continue',
     'welcome_odoo_renew' => 'Well, you have already renewed you can continue using Odoo',
+    'pay_renew' => 'Pay Renew'
 ];

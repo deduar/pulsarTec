@@ -17,7 +17,7 @@
                 </div>
             </div>
             <a href="{{ route('pay_renew') }}">
-                <button type="button" class="btn btn-success pull-right">Pagar Renovación</button>
+                <button type="button" class="btn btn-success pull-right">{{trans('home.pay_renew')}}</button>
             </a>
         </div>
     </div>

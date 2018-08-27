@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"whi",
+				"width\tproperty"
+			],
+			[
+				"col",
+				"col-md-2"
+			],
+			[
+				"font",
+				"font-weight\tproperty"
+			],
+			[
+				"marg",
+				"margin-top\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
 				"re",
 				"request"
 			],
@@ -22,10 +50,6 @@
 			[
 				"pad",
 				"padding-right"
-			],
-			[
-				"marg",
-				"margin"
 			],
 			[
 				"us",
@@ -244,10 +268,6 @@
 				"app_key"
 			],
 			[
-				"col",
-				"col-md-6"
-			],
-			[
 				"con",
 				"condition"
 			],
@@ -380,10 +400,6 @@
 				"style\tTag"
 			],
 			[
-				"text",
-				"text-decoration"
-			],
-			[
 				"cit",
 				"city_List"
 			],
@@ -394,10 +410,6 @@
 			[
 				"resu",
 				"result"
-			],
-			[
-				"whi",
-				"width"
 			],
 			[
 				"ina",
@@ -502,18 +514,6 @@
 			[
 				"th",
 				"thumbnail"
-			],
-			[
-				"ex",
-				"experience"
-			],
-			[
-				"experien",
-				"experience"
-			],
-			[
-				"is",
-				"isset"
 			]
 		]
 	},
@@ -523,24 +523,16 @@
 			"file": "routes/web.php",
 			"settings":
 			{
-				"buffer_size": 1561,
+				"buffer_size": 1562,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/emails/cron.blade.php",
+			"file": "resources/views/welcome.blade.php",
 			"settings":
 			{
-				"buffer_size": 106,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/HomeController.php",
-			"settings":
-			{
-				"buffer_size": 8903,
+				"buffer_size": 4922,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -601,17 +593,18 @@
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/database/migrations",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes"
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts"
 	],
 	"file_history":
 	[
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/welcome_1.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/app.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/welcome_orig.blade.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/HomeController.php",
+		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails/cron.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/register.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/layouts/app.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/register.php",
@@ -625,18 +618,15 @@
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/welcome.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/auth/register.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/routes/web.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/HomeController.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/en/update.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/lang/es/update.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Console/Kernel.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Console/Commands/UserStatistics.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/constants.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/app.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/composer.json",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/config/laradoo.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails/cron_summary_ending.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails/cron_ending.blade.php",
-		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails/cron.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/resources/views/emails/welcome.blade.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Controller.php",
 		"/home/deduar/Projects/PulsarTec_Odoo_SPA/app/Http/Controllers/Auth/RegisterController.php",
@@ -737,13 +727,11 @@
 		"/var/www/html/web/application/config/constants.php",
 		"/var/www/html/web/application/views/site/template/script_file.php",
 		"/var/www/html/web/application/views/site/experience/myexpreservation_orig.php",
-		"/var/www/html/web/application/controllers/site/tools.php",
-		"/var/www/html/web/application/controllers/tools.php",
-		"/var/www/html/web/application/controllers/cron.php"
+		"/var/www/html/web/application/controllers/site/tools.php"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 22.0
 	},
 	"find_in_files":
 	{
@@ -757,6 +745,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"iv class=\"title m-b-md\">\n                PulsarTec\n            </div>\n        </div>",
 			"register",
 			"update",
 			"home",
@@ -883,8 +872,7 @@
 			"require_once",
 			"require",
 			"include_once",
-			"changeBookingStatus",
-			"die()"
+			"changeBookingStatus"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -941,15 +929,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1561,
+						"buffer_size": 1562,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1066,
-								1066
+								459,
+								459
 							]
 						],
 						"settings":
@@ -968,50 +956,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "resources/views/emails/cron.blade.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 106,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/HomeController.php",
+					"file": "resources/views/welcome.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8903,
+						"buffer_size": 4922,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2460,
-								2468
+								2285,
+								2285
 							]
 						],
 						"settings":
@@ -1024,10 +981,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 941.0,
+						"translation.y": 520.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

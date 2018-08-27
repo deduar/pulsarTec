@@ -4,5 +4,5 @@ return [
     'login' => 'Login',
     'register' => 'Register',
     'logout' => 'Logout',
-    'edit_profile' => 'Profile Edit',
+    'edit_profile' => 'Profile Edit'
 ];

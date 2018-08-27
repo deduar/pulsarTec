@@ -20,4 +20,5 @@ return [
     'welcome_odoo' => 'Bienvenido a Odoo !!!',
     'end_date' => 'El tiempo de prueba vencio, Ahora debe renovar para continuar',
     'welcome_odoo_renew' => 'Bien, ya has renovado puedes continuar usando Odoo',
+    'pay_renew' => 'Pagar Renovación'
 ];

@@ -12,7 +12,7 @@
 */
 
 Route::get('setLocale/{locale}', function($locale){
-	Session::put('locale', $locale);
+	Session::put('_locale', $locale);
 	App::setLocale($locale);
 	return back();
 })->name('setLocale');
@@ -36,7 +36,8 @@ Route::get('/paypal_payment_response/{response}', 'HomeController@paypalpaymentr
 
 // Profile
 Route::post('/update', 'HomeController@updateProfile')->name('update_profile');
-Route::post('/change_password', 'HomeController@changePassword')->name('change_password');
+Route::get('/change_password', 'HomeController@changePassword')->name('change_password');
+Route::post('/update_password', 'HomeController@updatePassword')->name('update_password');
 
 // temporal routes, testing cron
 Route::get('/testByDue', 'HomeController@testByDue')->name('testByDue');

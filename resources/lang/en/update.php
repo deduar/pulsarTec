@@ -27,4 +27,7 @@ return [
     'address' => 'Address',
     'sent' => 'Send',
     'language' => 'Language',
+    'actual_password' => 'Current Password',
+    'new_password' => 'New Password',
+    'confirm_password' => 'Confirm Password'
 ];

@@ -11,6 +11,7 @@ use Config;
 
 use App;
 use Session;
+use Hash;
 
 use Illuminate\Support\Facades\DB;
 
@@ -77,7 +78,7 @@ class HomeController extends Controller
             App::setLocale(Session::get('locale'));
         }
         $user->update($request->all());
-        return view('welcome');
+        return view('home');
     }
 
     public function changePassword(){
@@ -87,9 +88,26 @@ class HomeController extends Controller
         } else {
             App::setLocale(Session::get('locale'));
         }
-        die("changePassword");
+        return view('changePassword', ['user'=>$user]);
     }
 
+    public function updatePassword(Request $request){
+        $user = Auth::user();
+        if (Session::get('locale') == null){
+            App::setLocale($user->language);    
+        } else {
+            App::setLocale(Session::get('locale'));
+        }
+        if (!(Hash::check($request->get('password'),Auth::user()->password))){
+            return redirect()->back()->withErrors(['password'=>'Incorrect password, check !!!']);
+        }
+        if ($request->new_password !== $request->confirm_password) {
+            return redirect()->back()->withErrors(['new_password'=>'New password and confirm not match, check !!!']);
+        }
+        $user->password = bcrypt($request->new_password);
+        $user->update();
+        return view('home');
+    }
 
 
     public function verify($register_code){
@@ -126,7 +144,7 @@ class HomeController extends Controller
 
         $data = array ('name' => $user->name, 'email' => $user->email, 'register_code' => $user->register_code);
 
-        Mail::send('emails.welcome', $data, function($message) use ($data)
+        Mail::send('emails.validate', $data, function($message) use ($data)
         {
             $message->from('no-reply@site.com', "Pulsar Tec");
             $message->subject("Register into PulsarTec");
